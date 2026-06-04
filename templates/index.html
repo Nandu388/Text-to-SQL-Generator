@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Text to SQL Generator</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <h1>Text to SQL Generator</h1>
+
+        <p>
+            Convert natural language into SQL queries
+        </p>
+
+    </div>
+
+    <form method="POST">
+
+        <div class="input-box">
+
+            <textarea
+                name="prompt"
+                placeholder="Enter SQL prompt..."
+                required>{{ prompt }}</textarea>
+
+            <button type="submit">
+                Generate SQL
+            </button>
+
+        </div>
+
+    </form>
+
+    {% if sql_query %}
+
+    <div class="output-box">
+
+        <div class="output-header">
+
+            <h2>Generated SQL Query</h2>
+
+        </div>
+
+        <pre>{{ sql_query }}</pre>
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+
+</html>
