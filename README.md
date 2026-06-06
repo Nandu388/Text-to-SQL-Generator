@@ -132,15 +132,6 @@ http://127.0.0.1:5000
 ## Input
 
 ```plaintext
-Generate 10 employes name and salary```
-
-## Output
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/6647c981-9d09-4338-93e1-7a145a00558f" />
-
-
-## Input
-
-```plaintext
 Get product id and price
 ```
 
@@ -163,8 +154,7 @@ Find customers older than 25
 ```sql
 SELECT * FROM customers WHERE age > 25;
 ```
-
----
+<img width="1920" height="1020" alt="Screenshot 2026-06-06 211137" src="https://github.com/user-attachments/assets/ffc7fa66-28cd-41e3-bfa7-675d168af736" />
 
 
 # Future Enhancements
